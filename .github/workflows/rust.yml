@@ -63,10 +63,8 @@ jobs:
        - name: Build
          run: |
            cargo build --release --target x86_64-pc-windows-msvc
-           cargo build --release --target aarch64-pc-windows-msvc
            mkdir out
            move target\x86_64-pc-windows-msvc\release\doge.exe out\doge_windows_x86_64.exe
-           move target\aarch64-pc-windows-msvc\release\doge.exe out\doge_windows_arm64.exe
        - name: Upload to artifact
          uses: actions/upload-artifact@v3
          with:
