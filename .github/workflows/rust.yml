@@ -4,9 +4,8 @@ on:
   push:
     branches:
       - master
-      - Dj-Codeman-build-test-debian
     tags:
-      - '*'
+      - 'latest'
 jobs:  
   build-linux:
     runs-on: ubuntu-latest
