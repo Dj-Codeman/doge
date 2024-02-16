@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - master
+      - Dj-Codeman-build-test-debian
     tags:
       - '*'
   pull_request:
