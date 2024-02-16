@@ -19,16 +19,11 @@ jobs:
       - name: Updating cargo
         run: | 
           cargo update
-      - name: Setup Dependencies
-        run: |
-          rustup target add i686-unknown-linux-gnu
       - name: Build
         run: |
           cargo build --target=x86_64-unknown-linux-gnu --release 
-          cargo build --target=i686-unknown-linux-gnu --release
           mkdir out
           mv -v target/x86_64-unknown-linux-gnu/release/doge out/doge_linux_64bit
-          mv -v target/i686-unknown-linux-gnu/release/doge out/doge_linux_32bit
       - name: Upload to artifact
         uses: actions/upload-artifact@v3
         with:
