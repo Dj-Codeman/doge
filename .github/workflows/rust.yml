@@ -20,7 +20,7 @@ jobs:
         uses: docker/setup-buildx-action@v3
       - name: Build
         run: |
-          docker buildx build --platform "linux/amd64,linux/arm64" --file Dockerfile.build.static --output out .
+          docker buildx build --platform "linux/amd64,linux/arm64" --file .github/workflows/Dockerfile.build.static --output out .
           mv out/**/doge_* out/
           rm -r out/linux*
       - name: Upload to artifact

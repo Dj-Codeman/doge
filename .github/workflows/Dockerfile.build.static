@@ -7,7 +7,7 @@ RUN apk update && \
     apk add rustup git gcc lld openssl1.1-compat-dev openssl1.1-compat-libs-static && \
     rustup-init -y && \
     source "$HOME/.cargo/env" && \
-    RUSTFLAGS="-C link-args=-fuse-ld=lld" cargo build && \
+    RUSTFLAGS="-C link-args=-fuse-ld=lld" cargo build --release && \
     strip target/debug/dog
 
 FROM scratch AS export-stage
