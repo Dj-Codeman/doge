@@ -35,7 +35,7 @@ jobs:
           rustup target add ${{ matrix.target }}
       - name: Install openssl
         run : |
-          apt-get install libssl-dev openssl-dev
+          sudo apt-get install libssl-dev openssl-dev
       - name: Build
         uses: actions-rs/cargo@v1
         with:
