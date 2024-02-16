@@ -39,7 +39,7 @@ jobs:
       - name: Update Cargo
         uses: actions-rs/cargo@v1
         with:
-          use-cross:true
+          use-cross: true
           command: update
       - name: Build
         uses: actions-rs/cargo@v1
