@@ -3,13 +3,22 @@ FROM alpine:3.18 as build
 COPY ./ /source
 WORKDIR /source
 
+ENV OPENSSL_STATIC=yes \
+    AARCH64_UNKNOWN_LINUX_GNU_OPENSSL_LIB_DIR=/usr/lib/aarch64-linux-gnu \
+    AARCH64_UNKNOWN_LINUX_GNU_OPENSSL_INCLUDE_DIR=/usr/include/aarch64-linux-gnu \
+    CARGO_TARGET_AARCH64_UNKNOWN_LINUX_GNU_LINKER=aarch64-linux-gnu-gcc \
+    CC_aarch64_unknown_linux_gnu=aarch64-linux-gnu-gcc \
+    CXX_aarch64_unknown_linux_gnu=aarch64-linux-gnu-g++ \
+    PKG_CONFIG_PATH="/usr/lib/aarch64-linux-gnu/pkgconfig/:${PKG_CONFIG_PATH}"
+
+
 RUN apk update && \
     apk add rustup git gcc lld openssl1.1-compat-dev openssl1.1-compat-libs-static && \
     rustup-init -y && \
     source "$HOME/.cargo/env" && \
-    RUSTFLAGS="-C link-args=-fuse-ld=lld" cargo build --release && \
-    strip target/debug/dog
+    RUSTFLAGS="-C link-args=-fuse-ld=lld" cargo update && cargo build --release && \
+    strip target/debug/doge
 
 FROM scratch AS export-stage
 ARG TARGETARCH
-COPY --from=build /source/target/debug/dog ./dog_linux_$TARGETARCH
+COPY --from=build /source/target/release/doge ./doge_linux_$TARGETARCH
