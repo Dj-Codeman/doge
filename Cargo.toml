@@ -12,7 +12,7 @@ exclude = [
 homepage = "https://dns.lookup.dog/"
 license = "MIT"
 
-version = "0.2.4-beta"
+version = "0.2.4"
 
 
 [[bin]]
