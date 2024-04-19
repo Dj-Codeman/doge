@@ -1,0 +1,9 @@
+[submodule "dns_transport"]
+	path = dns_transport
+	url = https://github.com/Dj-Codeman/doge_transport
+[submodule "doge_transport"]
+	path = doge_transport
+	url = https://github.com/Dj-Codeman/doge_transport
+[submodule "doge_dns"]
+	path = doge_dns
+	url = https://github.com/Dj-Codeman/doge_dns

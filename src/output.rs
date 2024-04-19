@@ -521,6 +521,7 @@ fn json_record_data(record: Record) -> JsonValue {
         Record::NAPTR(naptr) => {
             object! {
                 "order": naptr.order,
+                "preference": naptr.preference,
                 "flags": String::from_utf8_lossy(&naptr.flags).to_string(),
                 "service": String::from_utf8_lossy(&naptr.service).to_string(),
                 "regex": String::from_utf8_lossy(&naptr.regex).to_string(),
@@ -552,6 +553,12 @@ fn json_record_data(record: Record) -> JsonValue {
         Record::SOA(soa) => {
             object! {
                 "mname": soa.mname.to_string(),
+                "rname": soa.rname.to_string(),
+                "serial": soa.serial,
+                "refresh_interval": soa.refresh_interval,
+                "retry_interval": soa.retry_interval,
+                "expire_limit": soa.expire_limit,
+                "minimum_ttl": soa.minimum_ttl,
             }
         }
         Record::SRV(srv) => {

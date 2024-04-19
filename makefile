@@ -27,7 +27,7 @@ check:
 
 # Installation of the bin
 install:
-	@mv "./target/release/doge" /usr/bin/doge
+	@cp -v target/release/doge /usr/bin/doge
 	@chmod +x /usr/bin/doge
 
 # Targets related to testing

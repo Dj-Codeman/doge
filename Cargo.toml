@@ -12,8 +12,7 @@ exclude = [
 homepage = "https://dns.lookup.dog/"
 license = "MIT"
 
-version = "0.2.5"
-
+version = "0.2.6"
 
 [[bin]]
 name = "doge"
@@ -66,7 +65,7 @@ ipconfig = { version = "0.3" }
 datetime = { version = "0.5.1", default_features = false }
 
 [dev-dependencies]
-pretty_assertions = "0.7"
+pretty_assertions = "1.4"
 
 [features]
 default = ["with_idna", "with_tls", "with_https", "with_nativetls"]

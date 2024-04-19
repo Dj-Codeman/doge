@@ -72,23 +72,22 @@ It has colourful output, understands normal command-line argument syntax, suppor
 Currently:
     To install dog, you can download a pre-compiled binary, or you can compile it from source. You _**may**_ be able to install dog using your OS’s package manager, depending on your platform.
 
-### Project existence 
-    I am not a rust expert at all, Honestly I'm the opposite, just learning codding. I used [`dog`](https://github.com/ogham/dog) on my arch system and a few random *nix
-    Laptops that I perpetually fix and break . As such part of this progect will be outside of my skill set or ability to work on currently. Things such as :
-        *Windows support as a whole
-        *MACOS support as a whole (I'm never buying a mac so this won't be touched by me) I'll merge PRs if thats you thing
-        *Docker is magic as far as im concerned. I'm working on learning how to practically use it, but for now I wouldn't hold my breath
+Issues: 
+    I am not a rust expert at all, Honestly I'm the opposite, just learning codding. I used [`dog`](https://github.com/ogham/dog) on my arch system and a few random *nix Laptops that I perpetually fix and break . As such part of this progect will be outside of my skill set or ability to work on currently. 
+    For **Windows** I don't intende on installing windows 11 anytime soon, So I most likely won't be adding new windows features
+    For **Macos** Till i can afford to waste money on a mac, the workflow for building release packages is the only support macos is going to get
+    For **Docker**, This is magic as far as I'm concerned. While I learn the spells to use it in a meaningful way expect things to be broken 
     
     If any of these are things you want to see make a PR and I'll read and merge it, Be on the lookout for some potentially dumb questions from me.
 
 ### Packages
 
-    This is currelty a Work in progress
+    They exist now !!!
 
     $ cargo install dns-doge
+    $ yay -S dns-doge
     
-<!-- - For Arch Linux, install the [`dog`](https://www.archlinux.org/packages/community/x86_64/dog/) package.
-- For Homebrew on macOS, install the [`dog`](https://formulae.brew.sh/formula/dog) formula.
+<!-- - For Homebrew on macOS, install the [`dog`](https://formulae.brew.sh/formula/dog) formula.
 - For NixOS, install the [`dogdns`](https://search.nixos.org/packages?channel=unstable&show=dogdns&query=dogdns) package. -->
 
 
@@ -108,21 +107,19 @@ To build, download the source code and run:
     $ cargo build
     $ cargo test
 
-- The [just](https://github.com/casey/just) command runner can be used to run some helpful development commands, in a manner similar to `make`.
-Run `just --list` to get an overview of what’s available.
 
-- If you are compiling a copy for yourself, be sure to run `cargo build --release` or `just build-release` to benefit from release-mode optimisations.
+- If you are compiling a copy for yourself, be sure to run `cargo build --release` or `make build-release` to benefit from release-mode optimisations.
 Copy the resulting binary, which will be in the `target/release` directory, into a folder in your `$PATH`.
 `/usr/local/bin` is usually a good choice.
 
 - To compile and install the manual pages, you will need [pandoc](https://pandoc.org/).
-The `just man` command will compile the Markdown into manual pages, which it will place in the `target/man` directory.
+The `make man` command will compile the Markdown into manual pages, which it will place in the `target/man` directory.
 To use them, copy them into a directory that `man` will read.
 `/usr/local/share/man` is usually a good choice.
 
 
 ### ~~Container image~~
-#### These may still work but they will be unstable as I might break them.
+#### These may still work but they will be ***unstable*** as I might break them.
 
 To build the container image of doge, you can use Docker or Kaniko. Here an example using Docker:
 
@@ -135,18 +132,6 @@ You can then run it using the following command:
 To run dog directly, you can then define the following alias:
 
     $ alias doge="docker run -it --rm doge"
-
-
-### End-to-end testing
-
-doge has an integration test suite written as [Specsheet](https://specsheet.software/) check documents.
-If you have a copy installed, you can run:
-
-    $ just xtests
-
-Specsheet will test the compiled binary by making DNS requests over the network, checking that doge returns the correct results and does not crash.
-Note that this will expose your IP address.
-For more information, read [the xtests README](xtests/README.md).
 
 
 ### Feature toggles
@@ -173,8 +158,6 @@ The list of features that have been disabled can be checked at runtime as part o
 
 For documentation on how to use doge, see the dog website: <https://dns.lookup.dog/>
 Eventually I will make a new one
-
-
 
 ## Licence
 
