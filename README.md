@@ -157,8 +157,3 @@ The list of features that have been disabled can be checked at runtime as part o
 
 For documentation on how to use doge, see the dog website: <https://dns.lookup.dog/>
 Eventually I will make a new one
-
-## License
-
-doge’s source code is licensed under the [MIT](https://choosealicense.com/licenses/mit/).
-If this is wrong please email me at dwhitfield@ramfield.net
