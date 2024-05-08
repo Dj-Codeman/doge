@@ -109,6 +109,7 @@ impl OutputFormat {
                         "answers": json_answers(response.answers),
                         "authorities": json_answers(response.authorities),
                         "additionals": json_answers(response.additionals),
+                        "error": json_error_code(response.flags.error_code)
                     };
 
                     rs.push(json);
@@ -600,6 +601,23 @@ fn json_record_data(record: Record) -> JsonValue {
     }
 }
 
+fn json_error_code(error: Option<ErrorCode>) -> JsonValue {
+    match error {
+        None => JsonValue::Null,
+        Some(err) => 
+            match err {
+                ErrorCode::FormatError    => "FormErr".into(),
+                ErrorCode::ServerFailure  => "ServFail".into(),
+                ErrorCode::NXDomain       => "NXDomain".into(),
+                ErrorCode::NotImplemented => "NotImp".into(),
+                ErrorCode::QueryRefused   => "Refused".into(),
+                ErrorCode::BadVersion     => "BADVERS".into(), // BADVERS & BADSIG have the same enum value
+                
+                ErrorCode::Other(u16)   => (format!("OTHER_{}",   u16)).into(),
+                ErrorCode::Private(u16) => (format!("PRIVATE_{}", u16)).into(),
+            }
+    }
+}
 
 /// A wrapper around displaying characters that escapes quotes and
 /// backslashes, and writes control and upper-bit bytes as their number rather

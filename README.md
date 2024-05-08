@@ -118,10 +118,9 @@ To use them, copy them into a directory that `man` will read.
 `/usr/local/share/man` is usually a good choice.
 
 
-### ~~Container image~~
-#### These may still work but they will be ***unstable*** as I might break them.
+### Container image
 
-To build the container image of doge, you can use Docker or Kaniko. Here an example using Docker:
+To build the container image of doge, you can use Docker, Podman or Kaniko. Here an example using Docker:
 
     $ docker build -t doge .
 
@@ -158,8 +157,3 @@ The list of features that have been disabled can be checked at runtime as part o
 
 For documentation on how to use doge, see the dog website: <https://dns.lookup.dog/>
 Eventually I will make a new one
-
-## Licence
-
-doge’s source code is licenced under the [MIT](https://choosealicense.com/licenses/mit/).
-If this is wrong please email me at dwhitfield@ramfield.net
