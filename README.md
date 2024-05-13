@@ -92,13 +92,15 @@
 <h2>Installation</h2>
 <div>
 <h3>Current and Upcoming packages</h3>
-    <code>
-    Cargo: cargo install dns-doge
-    Docker: 
-    ArchLinux: yay -S dns_doge
-    Ubuntu/Debian: Comming Soon
-    RHEL/Fedora/Cenos: Publishing rpm
-    </code>
+    <pre>
+        <code>
+        Cargo: cargo install dns-doge
+        Docker: 
+        ArchLinux: yay -S dns_doge
+        Ubuntu/Debian: Comming Soon
+        RHEL/Fedora/Cenos: Publishing rpm
+        </code>
+    </pre>
     
 <h3>Docker/Podman</h3>    
     <p>To build the container image of doge, you can use Docker or Podman. Here an example using Docker:</p>
@@ -107,19 +109,14 @@
     <code>$ docker run -it --rm doge</code>
     <p>To run dog directly, you can then define the following alias:</p>
     <code>$ alias doge="docker run -it --rm doge"</code>
+
+<h3>Notes</h3>
+    <p>I am not a Rust expert at all, Honestly I'm the opposite, just learning coding. I used <a href="https://github.com/ogham/dog">dog</a> on my Arch system and a few random *nix Laptops that I perpetually fix and break. As such parts of maintaining and improving this project
+    will be outside of my understanding. Learning packaging, docker stuff and CI/CD. I'm too broke for a mac book, and currently refuse to 
+    install windows 10/11, Small fixes and improvements I'll try to fix timely but major things especially on my non target machines might
+    take awhile - forever to fix ( please drop a PR ) in those cases :). </p>
+
+<h4>Website</h4>
+    <p> I will make a website at some point... for the time being nothing to drastic has changed from <a href=" https://dns.lookup.dog/">the dog website</a>  
+    </p> 
 </div>
-
-
-
-  <div>
-    <p>Currently:</p>
-    <p>To install dog, you can download a pre-compiled binary, or you can compile it from source. You <em>may</em> be able to install dog using your OS’s package manager, depending on your platform.</p>
-    <p>Issues:</p>
-    <p>I am not a Rust expert at all, Honestly I'm the opposite, just learning coding. I used <a href="https://github.com/ogham/dog">dog</a> on my Arch system and a few random *nix Laptops that I perpetually fix and break. As such part of this project will be outside of my skill set or ability to work on currently.</p>
-    <p>For <strong>Windows</strong> I don't intend on installing Windows 11 anytime soon, So I most likely won't be adding new Windows features.</p>
-    <p>For <strong>MacOS</strong> Till I can afford to waste money on a Mac, the workflow for building release packages is the only support macOS is going to get.</p>
-    <p>For <strong>Docker</strong>, This is magic as far as I'm concerned. While I learn the spells to use it in a meaningful way expect things to be broken.</p>
-    <p>If any of these are things you want to see make a PR and I'll read and merge it, Be on the lookout for some potentially dumb questions from me.</p>
-
-    <!-- more installation info -->
-  </div>
