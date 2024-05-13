@@ -1,12 +1,6 @@
 <div align="center">
 <h1>doge</h1>
 
-doge is a fork of [dog](https://github.com/ogham/dog).
-
-<!-- <a href="https://travis-ci.org/github/ogham/dog">
-    <img src="https://travis-ci.org/ogham/dog.svg?branch=master" alt="Build status" />
-</a> -->
-
 <a href="https://saythanks.io/to/Dj-Codeman">
     <img src="https://img.shields.io/badge/Say%20Thanks-!-1EAEDB.svg" alt="Say thanks!" />
 </a>
@@ -83,6 +77,17 @@ It has colourful output, understands normal command-line argument syntax, suppor
 
 
 ---
+
+<details closed><summary>completions</summary>
+
+| File                                                                              | Summary                                                                                                                                                                                                                                                                                                                                            |
+| ---                                                                               | ---                                                                                                                                                                                                                                                                                                                                                |
+| [doge.bash](https://github.com/Dj-Codeman/doge/blob/master/completions/doge.bash) | The completions/doge.bash file extends Bash completions for the doge command, offering suggestions for options and their arguments. It handles various types of DNS queries and custom flags, enhancing user experience.                                                                                                                           |
+| [doge.fish](https://github.com/Dj-Codeman/doge/blob/master/completions/doge.fish) | Unleash the power of Fish Shell completion for a DNS query tool with doge.fish. Configure query options like hostname, type, nameserver, and protocol (UDP, TCP, TLS, HTTPS), along with output preferences such as colorization, time display, and JSON format. Customize advanced settings for EDNS, transaction IDs, and protocol-level tweaks. |
+| [doge.ps1](https://github.com/Dj-Codeman/doge/blob/master/completions/doge.ps1)   | Registers PowerShell completions for the doge command, providing suggested DNS type values and options based on preceding input. Adheres to PowerShell compatibility and supports option value completion.                                                                                                                                         |
+| [doge.zsh](https://github.com/Dj-Codeman/doge/blob/master/completions/doge.zsh)   | Interprets user arguments for various options like type of record, server address, and protocol selection, ultimately executing the desired DNS query.                                                                                                                                                                                             |
+
+</details>
 
 ## Installation
 
@@ -174,3 +179,5 @@ The list of features that have been disabled can be checked at runtime as part o
 
 For documentation on how to use doge, see the dog website: <https://dns.lookup.dog/>
 Eventually I will make a new one
+
+doge is a fork of [dog](https://github.com/ogham/dog).
