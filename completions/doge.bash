@@ -45,4 +45,4 @@ _doge()
             ;;
     esac
 } &&
-complete -o bashdefault -F _dog dog
+complete -o bashdefault -F _doge doge

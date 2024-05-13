@@ -33,7 +33,7 @@
     <code>doge example.net MX</code>                       ...looking up MX records instead
     <code>doge example.net MX @1.1.1.1</code>              ...using a specific nameserver instead
     <code>doge example.net MX @1.1.1.1 -T</code>           ...using TCP rather than UDP
-    <code>doge exapple.net MX @1.1.1.1 -p 53</code>        ...using a nonstandard port
+    <code>doge exapple.net MX @1.1.1.1 -p 69</code>        ...using a nonstandard port
     <code>doge -q example.net -t MX -n 1.1.1.1 -T</code>   As above, but using explicit arguments
   </pre>
 

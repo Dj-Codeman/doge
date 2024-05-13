@@ -1,4 +1,4 @@
-% doge(1) v0.1.1
+% doge(1) v0.2.7
 
 <!-- This is the doge(1) man page, written in Markdown. -->
 <!-- To generate the roff version, run `just man`, -->
