@@ -28,6 +28,7 @@
     <p><strong>doge</strong> is a command-line DNS client, like <code>dig</code> forked from the amazing work done <a href="https://github.com/ogham/dog">here</a>. It has colourful output, understands normal command-line argument syntax, supports the DNS-over-TLS and DNS-over-HTTPS protocols, and can emit JSON. I believe this is an amazing project and should be improved on.</p>
   </div>
 
+<div>
   <h2>Examples</h2>
   <pre>
     <code>doge example.net</code>                          Query a domain using default settings
@@ -39,15 +40,52 @@
   </pre>
 
   <h2>Command-line options</h2>
-  <h3>Query options</h3>
-  <pre>
-    <code>&lt;arguments&gt;</code>              Human-readable host names, nameservers, types, or classes
-    <code>-q, --query=HOST</code>             Host name or domain name to query
-    <code>-t, --type=TYPE</code>              Type of the DNS record being queried (A, MX, NS...)
-    <code>-n, --nameserver=ADDR</code>        Address of the nameserver to send packets to
-    <code>-p, --port=PORT</code>                Port options for sending queries on nonstandard ports
-    <code>--class=CLASS</code>                 Network class of the DNS record being queried (IN, CH, HS)
-  </pre>
+  <div>
+    <h3>Query options</h3>
+    <pre>
+      <code>&lt;arguments&gt;</code>              Human-readable host names, nameservers, types, or classes
+      <code>-q, --query=HOST</code>             Host name or domain name to query
+      <code>-t, --type=TYPE</code>              Type of the DNS record being queried (A, MX, NS...)
+      <code>-n, --nameserver=ADDR</code>        Address of the nameserver to send packets to
+      <code>-p, --port=PORT</code>                Port options for sending queries on nonstandard ports
+      <code>--class=CLASS</code>                 Network class of the DNS record being queried (IN, CH, HS)
+    </pre>
+  </div>
+
+  <div>
+    <h3>Sending options</h3>
+    <pre>
+      <code>--edns=SETTING           Whether to OPT in to EDNS (disable, hide, show)
+      --txid=NUMBER            Set the transaction ID to a specific value
+      -Z=TWEAKS                Set uncommon protocol-level tweaks
+      </code>
+    </pre>
+  </div>
+
+  <div>
+    <h3>Protocol options</h3>
+    <pre>
+      <code>-U, --udp                Use the DNS protocol over UDP
+      -T, --tcp                Use the DNS protocol over TCP
+      -S, --tls                Use the DNS-over-TLS protocol
+      -H, --https              Use the DNS-over-HTTPS protocol
+      </code>
+    </pre>
+  </div>
+
+  <div>
+    <h3>Output options</h3>
+    <pre>
+      <code>-1, --short              Short mode: display nothing but the first result
+      -J, --json               Display the output as JSON
+      --color, --colour=WHEN   When to colourise the output (always, automatic, never)
+      --seconds                Do not format durations, display them as seconds
+      --time                   Print how long the response took to arrive
+      </code>
+    </pre>
+  </div>
+</div>
+
 
   <!-- more options -->
 
