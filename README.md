@@ -1,4 +1,4 @@
-<h1>doge</h1>
+<h1>DOGE</h1>
 
 <a align="center" href="https://saythanks.io/to/Dj-Codeman">
     <img src="https://img.shields.io/badge/Say%20Thanks-!-1EAEDB.svg" alt="Say thanks!" />
