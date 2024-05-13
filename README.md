@@ -1,6 +1,6 @@
 <h1>doge</h1>
 
-<a href="https://saythanks.io/to/Dj-Codeman">
+<a align="center" href="https://saythanks.io/to/Dj-Codeman">
     <img src="https://img.shields.io/badge/Say%20Thanks-!-1EAEDB.svg" alt="Say thanks!" />
 </a>
 <p align="center">
@@ -9,9 +9,6 @@
   <img src="https://img.shields.io/github/languages/top/Dj-Codeman/doge?style=flat-square&color=0080ff" alt="repo-top-language">
   <img src="https://img.shields.io/github/languages/count/Dj-Codeman/doge?style=flat-square&color=0080ff" alt="repo-language-count">
 <p>
-<p align="center">
-    <em>Developed with the software and tools below.</em>
-</p>
 <p align="center">
     <img src="https://img.shields.io/badge/YAML-CB171E.svg?style=flat-square&logo=YAML&logoColor=white" alt="YAML">
     <img src="https://img.shields.io/badge/PowerShell-5391FE.svg?style=flat-square&logo=PowerShell&logoColor=white" alt="PowerShell">
