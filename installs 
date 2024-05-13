@@ -1,0 +1,2 @@
+cargo install dns-doge
+yay / paru -Sy dns-doge
