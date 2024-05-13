@@ -111,6 +111,6 @@
     take awhile - forever to fix ( please drop a PR ) in those cases :). </p>
 
 <h4>Website</h4>
-    <p> I will make a website at some point... for the time being nothing to drastic has changed from <a href=" https://dns.lookup.dog/">the dog website</a>  
+    <p> I will make a website at some point... for the time being nothing to drastic has changed from the dog <a href=" https://dns.lookup.dog">website</a>  
     </p> 
 </div>
