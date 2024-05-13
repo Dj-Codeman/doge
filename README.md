@@ -89,7 +89,28 @@
 
   <!-- more options -->
 
-  <h2>Installation</h2>
+<h2>Installation</h2>
+<div>
+<h3>Current and Upcoming packages</h3>
+    <code>
+    Cargo: cargo install dns-doge
+    Docker: 
+    ArchLinux: yay -S dns_doge
+    Ubuntu/Debian: Comming Soon
+    RHEL/Fedora/Cenos: Publishing rpm
+    </code>
+    
+<h3>Docker/Podman</h3>    
+    <p>To build the container image of doge, you can use Docker or Podman. Here an example using Docker:</p>
+    <code>$ docker build -t doge .</code>
+    <p>You can then run it using the following command:</p>
+    <code>$ docker run -it --rm doge</code>
+    <p>To run dog directly, you can then define the following alias:</p>
+    <code>$ alias doge="docker run -it --rm doge"</code>
+</div>
+
+
+
   <div>
     <p>Currently:</p>
     <p>To install dog, you can download a pre-compiled binary, or you can compile it from source. You <em>may</em> be able to install dog using your OS’s package manager, depending on your platform.</p>
@@ -99,9 +120,6 @@
     <p>For <strong>MacOS</strong> Till I can afford to waste money on a Mac, the workflow for building release packages is the only support macOS is going to get.</p>
     <p>For <strong>Docker</strong>, This is magic as far as I'm concerned. While I learn the spells to use it in a meaningful way expect things to be broken.</p>
     <p>If any of these are things you want to see make a PR and I'll read and merge it, Be on the lookout for some potentially dumb questions from me.</p>
-    <p>Packages:</p>
-    <p>They exist now !!!</p>
-    <pre><code>$ cargo install dns-doge
-$ yay -S dns-doge</code></pre>
+
     <!-- more installation info -->
   </div>
