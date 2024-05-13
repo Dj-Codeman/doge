@@ -57,8 +57,7 @@
     <pre>
       <code>--edns=SETTING           Whether to OPT in to EDNS (disable, hide, show)
       --txid=NUMBER            Set the transaction ID to a specific value
-      -Z=TWEAKS                Set uncommon protocol-level tweaks
-      </code>
+      -Z=TWEAKS                Set uncommon protocol-level tweaks</code>
     </pre>
   </div>
 
@@ -68,8 +67,7 @@
       <code>-U, --udp                Use the DNS protocol over UDP
       -T, --tcp                Use the DNS protocol over TCP
       -S, --tls                Use the DNS-over-TLS protocol
-      -H, --https              Use the DNS-over-HTTPS protocol
-      </code>
+      -H, --https              Use the DNS-over-HTTPS protocol</code>
     </pre>
   </div>
 
@@ -80,8 +78,7 @@
       -J, --json               Display the output as JSON
       --color, --colour=WHEN   When to colourise the output (always, automatic, never)
       --seconds                Do not format durations, display them as seconds
-      --time                   Print how long the response took to arrive
-      </code>
+      --time                   Print how long the response took to arrive</code>
     </pre>
   </div>
 </div>
@@ -93,13 +90,10 @@
 <div>
 <h3>Current and Upcoming packages</h3>
     <pre>
-        <code>
-        Cargo: cargo install dns-doge
-        Docker: 
+        <code>Cargo: cargo install dns-doge
         ArchLinux: yay -S dns_doge
         Ubuntu/Debian: Comming Soon
-        RHEL/Fedora/Cenos: Publishing rpm
-        </code>
+        RHEL/Fedora/Cenos: Publishing rpm</code>
     </pre>
     
 <h3>Docker/Podman</h3>    
