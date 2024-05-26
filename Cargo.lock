@@ -60,9 +60,9 @@ dependencies = [
 
 [[package]]
 name = "base64"
-version = "0.21.7"
+version = "0.22.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "9d297deb1925b89f2ccc13d7635fa0714f12c87adce1c75356b39ca9b7178567"
+checksum = "72b3254f16251a8381aa12e40e3c4d2f0199f8c6508fbecb9d91f575e0fbb8c6"
 
 [[package]]
 name = "bindgen"
@@ -201,9 +201,9 @@ dependencies = [
 
 [[package]]
 name = "doge_dns"
-version = "1.0.1"
+version = "1.0.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "d0b233996a83c2486f7a291dbdd75ae23fd0f6d8f61d6376e9452da80b96d185"
+checksum = "f6e4065e6483d4ae3af72d7dd756f619d6a25ca825722a5cb2c7007b2645022a"
 dependencies = [
  "base64",
  "byteorder",
