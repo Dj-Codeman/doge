@@ -99,7 +99,9 @@
     <code>$ docker build -t doge .</code>
     <p>You can then run it using the following command:</p>
     <code>$ docker run -it --rm doge</code>
-    <p>To run doge directly, you can then define the following alias:</p>
+
+  <p>To run doge directly, you can then define the following alias:</p>
+  
     <code>$ alias doge="docker run -it --rm doge"</code>
 
 <h3>Notes</h3>
