@@ -209,9 +209,9 @@ dependencies = [
 
 [[package]]
 name = "doge_transport"
-version = "0.2.5"
+version = "0.2.6"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "1d86321702916d28a95a1137291e5f7de57e496d94d7f53b306469d802b62c66"
+checksum = "fa9645f94826864bb8a0bb78291dee9b6f01ed7ad011123539b3fe203471424d"
 dependencies = [
  "cfg-if",
  "doge_dns",
