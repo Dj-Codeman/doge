@@ -177,6 +177,7 @@ fn run(Options { requests, format, measure_time }: Options) -> i32 {
 /// Checks whether the options contain parameters that will cause dog to fail
 /// because the feature is disabled by exiting if so.
 #[allow(unused)]
+#[allow(unexpected_cfgs)]
 fn disabled_feature_check(options: &Options) {
     use std::process::exit;
     use crate::connect::TransportType;
