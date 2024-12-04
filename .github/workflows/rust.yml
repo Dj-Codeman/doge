@@ -1,4 +1,5 @@
 name: build static binary
+
 on:
   workflow_dispatch:
   push:
@@ -6,6 +7,7 @@ on:
       - release
     tags:
       - 'latest'
+
 jobs:  
   build-linux:
     runs-on: ubuntu-latest
@@ -27,6 +29,7 @@ jobs:
         with:
           name: binary_linux
           path: ./out/*
+
   build-macos:
     runs-on: macos-latest
     steps:
@@ -50,6 +53,7 @@ jobs:
         with:
           name: binary_macos
           path: ./out/*
+
   build-windows:
      runs-on: windows-latest
      steps:
@@ -73,6 +77,7 @@ jobs:
          with:
            name: binary_windows
            path: ./out/*
+
   release:
     runs-on: ubuntu-latest
     needs: 
@@ -80,16 +85,36 @@ jobs:
       - build-windows
       - build-macos
     steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0 # Fetch full history to generate changelog
+
       - name: Download Artifact
         uses: actions/download-artifact@v3
         with:
           path: ./artifacts
+
       - name: Organize Files
         run: |
           mkdir -p out
           mv -v artifacts/**/doge_* out/
-      - name: Release
+
+      - name: Generate Changelog
+        id: changelog
+        run: |
+          git fetch --tags
+          PREVIOUS_TAG=$(git describe --tags --abbrev=0 HEAD^)
+          CURRENT_TAG=${GITHUB_REF#refs/tags/}
+          CHANGELOG=$(git log ${PREVIOUS_TAG}..${CURRENT_TAG} --pretty=format:"- %s (%an)")
+          echo "CHANGELOG=$CHANGELOG" >> $GITHUB_ENV
+
+      - name: Create Draft Release
         if: ${{ startsWith(github.ref, 'refs/tags/') }}
         uses: softprops/action-gh-release@v1
         with:
+          draft: true
           files: ./out/doge_*
+          body: |
+            ## Changelog
+            ${{ env.CHANGELOG }}
