@@ -12,7 +12,7 @@ exclude = [
 homepage = "https://dns.lookup.dog/"
 license = "MIT"
 
-version = "0.2.7"
+version = "0.2.8"
 
 [[bin]]
 name = "doge"
@@ -41,7 +41,7 @@ panic = "abort"
 
 # dns stuff
 doge_dns = "1.0.2"
-doge_transport = "0.2.5"
+doge_transport = "0.2.6"
 
 # command-line
 ansi_term = "0.12"

@@ -247,6 +247,7 @@ impl Inputs {
     fn load_fallbacks(&mut self) {
         if self.record_types.is_empty() {
             self.record_types.push(RecordType::A);
+            self.record_types.push(RecordType::AAAA);
         }
 
         if self.classes.is_empty() {

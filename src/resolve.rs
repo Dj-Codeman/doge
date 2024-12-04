@@ -89,6 +89,7 @@ impl Resolver {
 fn system_nameservers() -> Result<Resolver, ResolverLookupError> {
     use std::fs::File;
     use std::io::{BufRead, BufReader};
+    use std::net::IpAddr;
 
     if cfg!(test) {
         panic!("system_nameservers() called from test code");
@@ -103,7 +104,7 @@ fn system_nameservers() -> Result<Resolver, ResolverLookupError> {
         let line = line?;
 
         if let Some(nameserver_str) = line.strip_prefix("nameserver ") {
-            let ip: Result<std::net::Ipv4Addr, _> = nameserver_str.parse();
+            let ip: Result<IpAddr, _> = nameserver_str.parse();
             // TODO: This will need to be changed for IPv6 support.
 
             match ip {

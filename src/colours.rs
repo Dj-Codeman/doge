@@ -5,6 +5,7 @@ use ansi_term::Color::*;
 
 
 /// The **colours** are used to paint the input.
+#[allow(dead_code)]
 #[derive(Debug, Default)]
 pub struct Colours {
     pub qname: Style,
