@@ -529,7 +529,7 @@ mod test {
         fn fallbacks() -> Self {
             Inputs {
                 domains:         vec![ /* No domains by default */ ],
-                record_types:    vec![ RecordType::A ],
+                record_types:    vec![ RecordType::A, RecordType::AAAA ],
                 classes:         vec![ QClass::IN ],
                 resolver_types:  vec![ ResolverType::SystemDefault ],
                 transport_types: vec![ TransportType::Automatic ],
