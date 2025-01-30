@@ -1,11 +1,11 @@
-<h1>DOGE</h1>
+<h1>dog_community</h1>
 
 <p align="center">
-  <img src="https://img.shields.io/github/license/Dj-Codeman/doge?style=flat-square&logo=opensourceinitiative&logoColor=white&color=0080ff" alt="license">
+  <img src="https://img.shields.io/github/license/Dj-Codeman/dog_community?style=flat-square&logo=opensourceinitiative&logoColor=white&color=0080ff" alt="license">
   <img href="https://saythanks.io/to/Dj-Codeman" src="https://img.shields.io/badge/Say%20Thanks-!-1EAEDB.svg" alt="Say thanks!" />
-  <img src="https://img.shields.io/github/last-commit/Dj-Codeman/doge?style=flat-square&logo=git&logoColor=white&color=0080ff" alt="last-commit">
-  <img src="https://img.shields.io/github/languages/top/Dj-Codeman/doge?style=flat-square&color=0080ff" alt="repo-top-language">
-  <img src="https://img.shields.io/github/languages/count/Dj-Codeman/doge?style=flat-square&color=0080ff" alt="repo-language-count">
+  <img src="https://img.shields.io/github/last-commit/Dj-Codeman/dog_community?style=flat-square&logo=git&logoColor=white&color=0080ff" alt="last-commit">
+  <img src="https://img.shields.io/github/languages/top/Dj-Codeman/dog_community?style=flat-square&color=0080ff" alt="repo-top-language">
+  <img src="https://img.shields.io/github/languages/count/Dj-Codeman/dog_community?style=flat-square&color=0080ff" alt="repo-language-count">
 <p>
 <p align="center">
     <img src="https://img.shields.io/badge/YAML-CB171E.svg?style=flat-square&logo=YAML&logoColor=white" alt="YAML">
@@ -17,13 +17,18 @@
 </p>
   </div>
 
-  <img src="doge-screenshot.jpg" alt="A screenshot of dog making a DNS request">
+  <img src="dog_community_screenshot.jpg" alt="A screenshot of dog making a DNS request">
 
   <hr>
 
   <div>
-    <h4>Doge <em>can</em> look up!</h4>
-    <p><strong>doge</strong> is a command-line DNS client, like <code>dig</code> forked from the amazing work done <a href="https://github.com/ogham/dog">here</a>. It has colourful output, understands normal command-line argument syntax, supports the DNS-over-TLS and DNS-over-HTTPS protocols, and can emit JSON. I believe this is an amazing project and should be improved on.</p>
+    <h4>dog<em>can</em> look up!</h4>
+    <p><strong>dog_community</strong> is a command-line DNS client, like <code>dig</code> forked from the amazing work done <a href="https://github.com/ogham/dog">here</a>. It has colourful output, understands normal command-line argument syntax, supports the DNS-over-TLS and DNS-over-HTTPS protocols, and can emit JSON. I believe this is an amazing project and should be improved on.</p>
+  </div>
+
+  <div>
+    <h3>Notes2</h3>
+    <p>Due to some less than favorable recents events the doge joke has run it's course. I'm currently in the process of re-naming doge -> dog_community.</p>
   </div>
 
 <div>
@@ -113,5 +118,5 @@
 <h4>Website</h4>
     <p><s> I will make a website at some point... for the time being nothing to drastic has changed from the dog <a href=" https://dns.lookup.dog">website</a>  
     </s></p> 
-    <p> The original website no-longer exists. I'll make a new website for doge.... at some point</p>
+    <p> The original website no-longer exists. I'll make a new website for dog_community.... at some point</p>
 </div>
